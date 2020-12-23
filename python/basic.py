@@ -1,9 +1,9 @@
 import smtplib
 #SERVER = "localhost"
 
-FROM = 'monty@python.com'
+FROM = 'vasilaskc@gmail.com'
 
-TO = ["jon@mycompany.com"] # must be a list
+TO = ["kcvasilas@gmail.com"] # must be a list
 
 SUBJECT = "Hello!"
 
