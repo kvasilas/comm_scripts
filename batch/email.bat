@@ -4,7 +4,7 @@ $Password = "";
 function Send-ToEmail([string]$email, [string]$attachmentpath){
 
     $message = new-object Net.Mail.MailMessage;
-    $message.From = "kcvasilas@gmail.com";
+    $message.From = "myemail@gmail.com";
     $message.To.Add($email);
     $message.Subject = "subject text here...";
     $message.Body = "body text here...";
@@ -17,4 +17,4 @@ function Send-ToEmail([string]$email, [string]$attachmentpath){
     write-host "Mail Sent" ; 
     $attachment.Dispose();
  }
-Send-ToEmail  -email "kcvasilas@gmail.com" -attachmentpath $path;
+Send-ToEmail  -email "myemail@gmail.com" -attachmentpath $path;

@@ -2,10 +2,10 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-email = "vasilaskc@gmail.com"
+email = "myemail2@gmail.com"
 passwd = ""
 
-rec='kcvasilas@gmail.com'
+rec='myemail@gmail.com'
 smtp = "smtp.gmail.com"
 port = 587
 server = smtplib.SMTP(smtp, port)
@@ -21,5 +21,5 @@ body = "hello Senor\n"
 
 msg.attach(MIMEText(body, 'plain'))
 sms = msg.as_string()
-server.sendmail(email, sms_gateway, sms)
+server.sendmail(email, rec, sms)
 server.quit()
